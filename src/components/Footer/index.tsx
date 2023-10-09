@@ -7,7 +7,7 @@ interface FooterProps {
   alt?: string;
 }
 
-export default function Footer({ alt}: FooterProps) {
+export default function Footer({ alt="Icons media social"}: FooterProps) {
   const icones = [
     {
       iconName: "Whatsapp",

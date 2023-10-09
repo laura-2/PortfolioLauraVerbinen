@@ -1,19 +1,19 @@
 interface LetterProps {
-    imagem: string,
+    image: string,
     alt?: string,
-    titulo: string,
-    texto: string
+    title: string,
+    text: string
 }
 
-export default function Letter({imagem, alt, titulo, texto}: LetterProps){
+export default function Letter({image, alt="Image girl on the computer", title, text}: LetterProps){
     return(
-        <section className="flex justify-center items-center ml-48 my-10">
-            <div className="block self-center gap-3">
-                <h1 className="uppercase font-bold text-7xl">{titulo}</h1>
-                <p className="text-xl">{texto}</p>
+        <section className="flex py-20 mx-44" id="page-H">
+            <div className="block self-center">
+                <h1 className="uppercase font-bold text-7xl">{title}</h1>
+                <p className="text-xl">{text}</p>
             </div>
-            <div className="flex">
-                <img alt={alt} src={imagem}/>
+            <div className="w-3/4">
+                <img alt={alt} src={image}/>
             </div>
         </section>
     )

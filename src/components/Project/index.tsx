@@ -19,123 +19,123 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 interface ProjectProps {
-    titulo: string
+    title: string
 }
 
-export default function Project({titulo}: ProjectProps){
+export default function Project({title}: ProjectProps){
     const skills = [
         {
-            imagem: casaverde,
-            site: 'https://casa-verde-coral.vercel.app/',
+            image: casaverde,
+            website: 'https://casa-verde-coral.vercel.app/',
             alt: 'Project Casa Verde',
-            codigo: 'https://github.com/laura-2/casaVerde',
-            texto: 'React Javascript CSS'
+            code: 'https://github.com/laura-2/casaVerde',
+            text: 'React Javascript CSS'
         },
         {
-            imagem: cord,
-            site: 'https://web-site-nextjs-delta.vercel.app/',
+            image: cord,
+            website: 'https://web-site-nextjs-delta.vercel.app/',
             alt: 'Project LauraCord',
-            codigo: 'https://github.com/laura-2/WebSite-nextjs',
-            texto: 'Next Javascript CSS'
+            code: 'https://github.com/laura-2/WebSite-nextjs',
+            text: 'Next Javascript CSS'
         },
         {
-            imagem: meteora,
-            site: 'https://loja-meteora-eight.vercel.app/',
+            image: meteora,
+            website: 'https://loja-meteora-eight.vercel.app/',
             alt: 'Project Loja Meteora',
-            codigo: 'https://github.com/laura-2/loja-meteora',
-            texto: 'React Javascript Bootstrap'
+            code: 'https://github.com/laura-2/loja-meteora',
+            text: 'React Javascript Bootstrap'
         },
         {
-            imagem: midi,
-            site: 'https://teclas-som.vercel.app/',
+            image: midi,
+            website: 'https://teclas-som.vercel.app/',
             alt: 'Project Midi',
-            codigo: 'https://github.com/laura-2/teclasSom',
-            texto: 'HTML CSS JavaScript'
+            code: 'https://github.com/laura-2/teclasSom',
+            text: 'HTML CSS JavaScript'
         },
         {
-            imagem: fruta,
-            site: 'https://frutafruto-azure.vercel.app/',
+            image: fruta,
+            website: 'https://frutafruto-azure.vercel.app/',
             alt: 'Project fruta&fruto',
-            codigo: 'https://github.com/laura-2/frutafruto',
-            texto: 'HTML CSS'
+            code: 'https://github.com/laura-2/frutafruto',
+            text: 'HTML CSS'
         },
         {
-            imagem: alura,
-            site: 'https://alura-html-b8wo.vercel.app/',
+            image: alura,
+            website: 'https://alura-html-b8wo.vercel.app/',
             alt: 'Project Alura',
-            codigo: 'https://github.com/laura-2/alura_html',
-            texto: 'HTML CSS'
+            code: 'https://github.com/laura-2/alura_html',
+            text: 'HTML CSS'
         },
         {
-            imagem: alFood,
-            site: 'https://al-food.vercel.app/',
+            image: alFood,
+            website: 'https://al-food.vercel.app/',
             alt: 'Project AlFood',
-            codigo: 'https://github.com/laura-2/alFood',
-            texto: 'React TypeScript SASS'
+            code: 'https://github.com/laura-2/alFood',
+            text: 'React TypeScript SASS'
         },
         {
-            imagem: culturama,
-            site: 'https://culturama-nine-kappa.vercel.app/',
+            image: culturama,
+            website: 'https://culturama-nine-kappa.vercel.app/',
             alt: 'Project Culturama',
-            codigo: 'https://github.com/laura-2/culturama',
-            texto: 'HTML CSS'
+            code: 'https://github.com/laura-2/culturama',
+            text: 'HTML CSS'
         },
         {
-            imagem: cursos,
-            site: 'https://alura-books-laura-2.vercel.app/',
+            image: cursos,
+            website: 'https://alura-books-laura-2.vercel.app/',
             alt: 'Project AluraBooks',
-            codigo: 'https://github.com/laura-2/aluraBooks',
-            texto: 'HTML CSS'
+            code: 'https://github.com/laura-2/aluraBooks',
+            text: 'HTML CSS'
         },
         {
-            imagem: tech,
-            site: 'https://optimus-tech-lake.vercel.app/',
+            image: tech,
+            website: 'https://optimus-tech-lake.vercel.app/',
             alt: 'Project OptimusTech',
-            codigo: 'https://github.com/laura-2/optimusTech',
-            texto: 'HTML CSS'
+            code: 'https://github.com/laura-2/optimusTech',
+            text: 'HTML CSS'
         },
         {
-            imagem: lembrancas,
-            site: 'https://organo-seven-dusky.vercel.app/',
+            image: lembrancas,
+            website: 'https://organo-seven-dusky.vercel.app/',
             alt: 'Project Lembranças',
-            codigo: 'https://github.com/laura-2/organo',
-            texto: 'React Javascript CSS'
+            code: 'https://github.com/laura-2/organo',
+            text: 'React Javascript CSS'
         },
         {
-            imagem: sobremim,
-            site: 'https://portfolio-ten-pi-85.vercel.app/index.html',
+            image: sobremim,
+            website: 'https://portfolio-ten-pi-85.vercel.app/index.html',
             alt: 'Project Sobre mim',
-            codigo: 'https://github.com/laura-2/portfolio',
-            texto: 'HTML CSS Javascript'
+            code: 'https://github.com/laura-2/portfolio',
+            text: 'HTML CSS Javascript'
         },
         {
-            imagem: confeitaria,
-            site: 'https://magnolia-x6x5.vercel.app/',
+            image: confeitaria,
+            website: 'https://magnolia-x6x5.vercel.app/',
             alt: 'Project Magnolia',
-            codigo: 'https://github.com/laura-2/magnolia',
-            texto: 'HTML CSS'
+            code: 'https://github.com/laura-2/magnolia',
+            text: 'HTML CSS'
         },
         {
-            imagem: cash,
-            site: 'https://pod-cast-eta.vercel.app/',
+            image: cash,
+            website: 'https://pod-cast-eta.vercel.app/',
             alt: 'Project PdCast',
-            codigo: 'https://github.com/laura-2/podCast',
-            texto: 'HTML CSS'
+            code: 'https://github.com/laura-2/podCast',
+            text: 'HTML CSS'
         },
 
     ]
     return(
-        <section className="block mx-44" id="Projects">
-            <h1 className="uppercase font-bold text-7xl">{titulo}</h1>
+        <section className="block mx-44" id="page-j">
+            <h1 className="uppercase font-bold text-7xl">{title}</h1>
             <Swiper spaceBetween={20} slidesPerView={2} 
             className='flex my-28'>
                 {skills.map((item, index)=>{
                     return  <SwiperSlide key={index} className="block justify-center text-center px-16 py-10
                     border-2 rounded-lg">
-                        <a href={item.site}><img alt={item.alt} src={item.imagem}></img></a>
-                        <p className="py-5">{item.texto}</p>
-                            <a href={item.codigo} 
-                            className="text-white px-5 py-2 link-code">Visualizar Código-fonte</a>
+                        <a href={item.website}><img alt={item.alt} src={item.image}></img></a>
+                        <p className="py-5">{item.text}</p>
+                            <a href={item.code} 
+                            className="text-white px-5 py-2 link-code">View source code</a>
                         </SwiperSlide>
                 })}
                 </Swiper>

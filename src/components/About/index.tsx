@@ -1,19 +1,19 @@
 interface AboutProps {
-    imagem: string,
+    image: string,
     alt?: string,
-    titulo: string,
-    texto: string
+    title: string,
+    text: string
 }
 
-export default function About({imagem, alt, titulo, texto}: AboutProps){
+export default function About({image, alt="Image girl listens to music.", title, text}: AboutProps){
     return(
-        <section className="flex justify-center items-center gap-36 mx-44 my-36" id="About">
+        <section className="flex  items-center gap-32 mx-44 py-20" id="page-b">
             <div className="flex w-11/12">
-                <img alt={alt} src={imagem}/>
+                <img alt={alt} src={image}/>
             </div>
             <div className="block w-4/5">
-                <h1 className="uppercase font-bold text-7xl">{titulo}</h1>
-                <p>{texto}</p>
+                <h1 className="uppercase font-bold text-7xl">{title}</h1>
+                <p>{text}</p>
             </div>
         </section>
     )

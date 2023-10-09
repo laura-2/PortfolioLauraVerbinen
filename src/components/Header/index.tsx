@@ -1,24 +1,21 @@
 interface HeaderProps {
-    imagem: string,
+    image: string,
     alt?: string
 }
 
-export default function Header({imagem, alt}: HeaderProps){
-    const option = ['Home', 'About', 'Projects', 'Contact', 'Skills']
-        const handleClickScroll = (option: string) => {
-          const element = document.getElementById(option);
-          if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-          } 
-        }
+export default function Header({image, alt="Logo image"}: HeaderProps){
+    const option = ['Home', 'About', 'Skills', 'Projects', 'Contact']
+
     return(
-        <header className="flex px-20 py-5" id="Home">
+        <header className="flex py-5 px-20" id="Home">
             <div className="flex">
-                <img alt={alt} src={imagem} className="w-1/5"/>
+                <img alt={alt} src={image} className="w-1/5"/>
             </div>
             <div className="flex gap-12 items-center">
                 {option.map((item, index)=>{
-                    return <p className="text-xl text-white" key={index} onClick={()=>handleClickScroll(item)}>{item}</p>
+                    return <a className="text-xl text-white" key={index}
+                    href={`#page-${item[index]}`}
+                     >{item}</a>
                 })}
             </div>
         </header>

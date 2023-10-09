@@ -12,94 +12,90 @@ import sass from '../../assets/sass.png';
 import tp from '../../assets/typescript.png';
 import tw from '../../assets/tailwind.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
 
 interface AboutProps {
-    titulo: string
+    title: string
 }
 
-export default function Skills({titulo}: AboutProps){
+export default function Skills({title}: AboutProps){
     const skills = [
         {
-            imagem: react,
+            image: react,
             alt: 'React',
-            texto: 'React'
+            text: 'React'
         },
         {
-            imagem: reactNative,
+            image: reactNative,
             alt: 'React Native',
-            texto: 'React Native'
+            text: 'React Native'
         },
         {
-            imagem: css,
+            image: css,
             alt: 'CSS',
-            texto: 'CSS'
+            text: 'CSS'
         },
         {
-            imagem: git,
+            image: git,
             alt: 'Git',
-            texto: 'Git'
+            text: 'Git'
         },
         {
-            imagem: html,
+            image: html,
             alt: 'HTML',
-            texto: 'HTML'
+            text: 'HTML'
         },
         {
-            imagem: js,
+            image: js,
             alt: 'JavaScript',
-            texto: 'JavaScript'
+            text: 'JavaScript'
         },
         {
-            imagem: mysql,
+            image: mysql,
             alt: 'MySQL',
-            texto: 'MySQL'
+            text: 'MySQL'
         },
         {
-            imagem: next,
+            image: next,
             alt: 'NextJS',
-            texto: 'NextJS'
+            text: 'NextJS'
         },
         {
-            imagem: node,
+            image: node,
             alt: 'NodeJS',
-            texto: 'NodeJS'
+            text: 'NodeJS'
         },
         {
-            imagem: redux,
+            image: redux,
             alt: 'Redux',
-            texto: 'Redux'
+            text: 'Redux'
         },
         {
-            imagem: sass,
+            image: sass,
             alt: 'SASS',
-            texto: 'SASS'
+            text: 'SASS'
         },
         {
-            imagem: tw,
+            image: tw,
             alt: 'Tailwind CSS',
-            texto: 'Tailwind CSS'
+            text: 'Tailwind CSS'
         },
         {
-            imagem: tp,
+            image: tp,
             alt: 'TypeScript',
-            texto: 'TypeScript'
+            text: 'TypeScript'
         },
 
     ]
     return(
-        <section className="block mx-44" id="Skills">
-            <h1 className="uppercase font-bold text-7xl">{titulo}</h1>
+        <section className="block mx-44 py-20" id="page-i">
+            <h1 className="uppercase font-bold text-7xl">{title}</h1>
             <Swiper spaceBetween={20} slidesPerView={4} 
-            className='flex my-28 shadow-md'>
+            className='flex my-20 shadow-md'>
                 {skills.map((item, index)=>{
                     return  <SwiperSlide key={index} className="block justify-center shadow-2xl p-16
                     border-2 rounded-lg">
-                        <img alt={item.alt} src={item.imagem}></img>
-                        <p className="text-center pt-5">{item.texto}</p>
+                        <img alt={item.alt} src={item.image}></img>
+                        <p className="text-center pt-5">{item.text}</p>
                         </SwiperSlide>
                 })}
                 </Swiper>

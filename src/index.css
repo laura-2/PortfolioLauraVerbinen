@@ -1,4 +1,4 @@
-body {
+body{
   margin: 0;
   box-sizing: border-box;
   padding: 0;
@@ -11,9 +11,16 @@ body {
   scroll-behavior: smooth;
   overflow-y: scroll;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 h1{
   color: #dc965a;
+}
+a{
+  list-style: none;
+  text-decoration: none;
 }
 p{
   color: #fbfbf2;
@@ -24,7 +31,7 @@ p{
   border-color: #51344d;
 }
 body::-webkit-scrollbar {
-  width: 18px;  
+  width: 18px;
 }
 
 body::-webkit-scrollbar-track {
@@ -32,6 +39,19 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
+  background-color: #dc965a;   
+  border-radius: 20px;       
+  border: 5px solid #353d2f;  
+}
+.area-contact::-webkit-scrollbar {
+  width: 15px;
+}
+
+.area-contact::-webkit-scrollbar-track {
+  background: #353d2f
+}
+
+.area-contact::-webkit-scrollbar-thumb {
   background-color: #dc965a;   
   border-radius: 20px;       
   border: 5px solid #353d2f;  
@@ -44,6 +64,10 @@ body::-webkit-scrollbar-thumb {
   background-color: #353d2f;
   border: 1px solid #dc965a;
 }
+.area-contact{
+  resize: none;
+}
+
 .button-contact{
   color: #fbfbf2;
   border-radius: 8px;

@@ -12,7 +12,7 @@ export default function Letter({image, alt="Image girl on the computer", title, 
                 <h1 className="uppercase font-bold text-5xl">{title}</h1>
                 <p className="text-2xl">{text}</p>
             </div>
-            <div className="w-4/5 xl:w-2/4">
+            <div className="w-5/6 xl:w-2/4">
                 <img alt={alt} src={image}/>
             </div>
         </section>

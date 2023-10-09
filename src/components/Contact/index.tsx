@@ -39,27 +39,27 @@ export default function Contact({ image, alt="Image girl running", title }: Cont
 
   
   return (
-    <section className="flex flex-col items-center p-10 gap-10 xl:flex-row xl:ml-20" id="page-a">
-      <div className="flex w-4/5 xl:w-3/6">
+    <section className="flex flex-col items-center gap-10 xl:flex-row xl:ml-20" id="page-a">
+      <div className="flex w-5/6 xl:w-3/6">
         <img alt={alt} src={image} />
       </div>
-      <div className="block items-center gap-5 w-4/5">
-        <h1 className="uppercase font-bold text-5xl">{title}</h1>
+      <div className="block items-center gap-5 w-6/5">
+        <h1 className="uppercase font-bold text-4xl">{title}</h1>
         <form className="flex my-5 flex-col" onSubmit={handleSubmit(onSubmit)}>
           <label className="text-white text-xl" htmlFor="name">Name</label>
-          <input placeholder="First name" className="input-contact w-5/6" type="text"
+          <input placeholder="First name" className="input-contact w-11/12" type="text"
           {...register("name")}/>
           {errors?.name?.message && (
           <p className="text-white">{errors?.name?.message}</p>
           )}
           <label className="text-white text-xl" htmlFor="email">Email</label>
-          <input placeholder="example@email.com" className="input-contact w-5/6" type="email"
+          <input placeholder="example@email.com" className="input-contact w-11/12" type="email"
           {...register("email")} />
           {errors?.email?.message && (
           <p className="text-white">{errors?.email?.message}</p>
           )}
           <label className="text-white text-xl" htmlFor="message">Message</label>
-          <textarea placeholder="Write your message" className="area-contact w-5/6 h-72" typeof="text"
+          <textarea placeholder="Write your message" className="area-contact w-11/12 h-72" typeof="text"
           {...register("message")}/>
           {errors?.message?.message && (
           <p className="text-white">{errors?.message?.message}</p>

@@ -126,7 +126,7 @@ export default function Project({title}: ProjectProps){
     ]
     return(
         <section className="block p-10 xl:mx-28" id="page-j">
-            <h1 className="uppercase font-bold text-5xl">{title}</h1>
+            <h1 className="uppercase font-bold text-4xl">{title}</h1>
             <Swiper spaceBetween={20} slidesPerView={1} 
             breakpoints={{
                 1024: {
@@ -134,12 +134,12 @@ export default function Project({title}: ProjectProps){
                   slidesPerView: 2,
                 }
               }}
-            className='flex my-28'>
+            className='flex my-10'>
                 {skills.map((item, index)=>{
-                    return  <SwiperSlide key={index} className="block justify-center text-center px-16 py-10
-                    border-2 rounded-lg">
-                        <a href={item.website}><img alt={item.alt} src={item.image}></img></a>
-                        <p className="py-5">{item.text}</p>
+                    return  <SwiperSlide key={index} className="block justify-center text-center
+                    border-2 rounded-lg py-5">
+                        <a href={item.website}><img alt={item.alt} src={item.image} className='p-5'/></a>
+                        <p className="py-3">{item.text}</p>
                             <a href={item.code} 
                             className="text-white px-5 py-2 link-code">View source code</a>
                         </SwiperSlide>

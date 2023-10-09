@@ -31,7 +31,7 @@ export default function Footer({ alt="Icons media social"}: FooterProps) {
     },
   ];
   return (
-    <section className="flex flex-wrap justify-center gap-10 my-5 mx-10 md:mx-0 md:gap-2 xl:gap-20" id="Footer">
+    <section className="flex flex-wrap justify-center gap-2 my-2 md:mx-0 md:gap-2 xl:gap-20" id="Footer">
         {icones.map((vector, index) => {
           return (
             <a
@@ -39,8 +39,8 @@ export default function Footer({ alt="Icons media social"}: FooterProps) {
               key={index}
               href={vector.link}
             >
-              <img alt={alt} src={vector.url} className="m-2" />
-              <p className="text-xl">{vector.iconName}</p>
+              <img alt={alt} src={vector.url} className="m-2 w-2/12"/>
+              <p className="text-sm">{vector.iconName}</p>
             </a>
           );
         })}

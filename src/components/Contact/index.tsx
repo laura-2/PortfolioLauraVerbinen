@@ -39,11 +39,11 @@ export default function Contact({ image, alt="Image girl running", title }: Cont
 
   
   return (
-    <section className="flex flex-col items-center gap-10 xl:flex-row xl:ml-20" id="page-a">
+    <section className="flex flex-col gap-10 xl:flex-row xl:ml-20" id="page-a">
       <div className="flex w-5/6 xl:w-3/6">
         <img alt={alt} src={image} />
       </div>
-      <div className="block items-center gap-5 w-6/5">
+      <div className="block self-center gap-5 w-5/6">
         <h1 className="uppercase font-bold text-4xl">{title}</h1>
         <form className="flex my-5 flex-col" onSubmit={handleSubmit(onSubmit)}>
           <label className="text-white text-xl" htmlFor="name">Name</label>

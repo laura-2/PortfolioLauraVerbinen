@@ -40,7 +40,7 @@ export default function Contact({ image, alt="Image girl running", title }: Cont
   
   return (
     <section className="flex flex-col gap-10 xl:flex-row xl:ml-20" id="page-a">
-      <div className="flex w-5/6 xl:w-3/6">
+      <div className="flex w-5/6 self-center xl:w-3/6">
         <img alt={alt} src={image} />
       </div>
       <div className="block self-center gap-5 w-5/6">

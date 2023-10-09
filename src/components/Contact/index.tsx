@@ -12,7 +12,7 @@ interface ContactProps {
 }
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhucGF2ZXJyYmtncXdoeGdkcHJtIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTY2MTgwMDQsImV4cCI6MjAxMjE5NDAwNH0.R6IrfMiNDObNzLyB5paFqrIo1DQkgdMJFdeWv55DjEE';
 const SUPABASE_URL = 'https://xnpaverrbkgqwhxgdprm.supabase.co';
-const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
+const supabase = createClient<string>(SUPABASE_URL, SUPABASE_ANON_KEY)
 
 export default function Contact({ image, alt="Image girl running", title }: ContactProps) {
   const [showMessage, setShowMessage] = useState(false);

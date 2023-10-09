@@ -87,8 +87,8 @@ export default function Skills({title}: AboutProps){
 
     ]
     return(
-        <section className="block py-20 px-16 xl:px-28" id="page-i">
-            <h1 className="uppercase font-bold text-7xl">{title}</h1>
+        <section className="block p-10 xl:px-28" id="page-i">
+            <h1 className="uppercase font-bold text-5xl">{title}</h1>
             <Swiper spaceBetween={20} slidesPerView={2} 
             breakpoints={{
                 768: {
@@ -98,7 +98,7 @@ export default function Skills({title}: AboutProps){
               }}
             className='flex my-20 shadow-md'>
                 {skills.map((item, index)=>{
-                    return  <SwiperSlide key={index} className="block justify-center shadow-2xl p-16
+                    return  <SwiperSlide key={index} className="block justify-center shadow-2xl p-10
                     border-2 rounded-lg">
                         <img alt={item.alt} src={item.image}></img>
                         <p className="text-center pt-5">{item.text}</p>

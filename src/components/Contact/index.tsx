@@ -39,21 +39,21 @@ export default function Contact({ image, alt="Image girl running", title }: Cont
 
   
   return (
-    <section className="flex flex-col items-center gap-10 xl:flex-row xl:ml-20" id="page-a">
+    <section className="flex flex-col items-center p-10 gap-10 xl:flex-row xl:ml-20" id="page-a">
       <div className="flex w-4/5 xl:w-3/6">
         <img alt={alt} src={image} />
       </div>
       <div className="block items-center gap-5 w-4/5">
-        <h1 className="uppercase font-bold text-7xl">{title}</h1>
+        <h1 className="uppercase font-bold text-5xl">{title}</h1>
         <form className="flex my-5 flex-col" onSubmit={handleSubmit(onSubmit)}>
           <label className="text-white text-xl" htmlFor="name">Name</label>
-          <input placeholder="First name" className="input-contact w-2/3" type="text"
+          <input placeholder="First name" className="input-contact w-5/6" type="text"
           {...register("name")}/>
           {errors?.name?.message && (
           <p className="text-white">{errors?.name?.message}</p>
           )}
           <label className="text-white text-xl" htmlFor="email">Email</label>
-          <input placeholder="example@email.com" className="input-contact w-2/3" type="email"
+          <input placeholder="example@email.com" className="input-contact w-5/6" type="email"
           {...register("email")} />
           {errors?.email?.message && (
           <p className="text-white">{errors?.email?.message}</p>
@@ -64,7 +64,7 @@ export default function Contact({ image, alt="Image girl running", title }: Cont
           {errors?.message?.message && (
           <p className="text-white">{errors?.message?.message}</p>
           )}
-          <button className="button-contact w-2/6 flex justify-center items-center gap-3 xl:w-1/6">Send<img src={sendIcon} alt="Send message"/></button>
+          <button className="button-contact w-3/6 flex justify-center items-center gap-3 xl:w-1/6">Send<img src={sendIcon} alt="Send message"/></button>
         </form>
         {showMessage && (
            <div className="text-white">

@@ -125,8 +125,8 @@ export default function Project({title}: ProjectProps){
 
     ]
     return(
-        <section className="block mx-16 xl:mx-28" id="page-j">
-            <h1 className="uppercase font-bold text-7xl">{title}</h1>
+        <section className="block p-10 xl:mx-28" id="page-j">
+            <h1 className="uppercase font-bold text-5xl">{title}</h1>
             <Swiper spaceBetween={20} slidesPerView={1} 
             breakpoints={{
                 1024: {

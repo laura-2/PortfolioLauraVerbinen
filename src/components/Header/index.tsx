@@ -14,7 +14,7 @@ export default function Header({image, alt="Logo image"}: HeaderProps){
     return(
         <header className="flex py-5 px-10 items-center" id="Home">
             <div>
-                <img alt={alt} src={image} className="w-1/5 md:w-3/5 lg:w-2/5 xl:w-1/5"/>
+                <img alt={alt} src={image} className="w-2/5 md:w-3/5 lg:w-2/5 xl:w-1/5"/>
             </div>
             <nav className="md:hidden">
                 <img alt="Menu" src={menu} onClick={()=>setOpenMenu(!openMenu)}/>

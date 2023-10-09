@@ -31,7 +31,7 @@ export default function Footer({ alt="Icons media social"}: FooterProps) {
     },
   ];
   return (
-    <section className="flex justify-center gap-16 my-10" id="Footer">
+    <section className="flex flex-wrap justify-center gap-10 my-10 mx-10 md:mx-0 md:gap-2 xl:gap-20" id="Footer">
         {icones.map((vector, index) => {
           return (
             <a

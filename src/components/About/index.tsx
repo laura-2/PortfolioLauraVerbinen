@@ -7,7 +7,7 @@ interface AboutProps {
 
 export default function About({image, alt="Image girl listens to music.", title, text}: AboutProps){
     return(
-        <section className="flex  items-center gap-32 mx-44 py-20" id="page-b">
+        <section className="flex flex-col items-center gap-10 py-20 xl:flex-row xl:mx-28" id="page-b">
             <div className="flex w-11/12">
                 <img alt={alt} src={image}/>
             </div>

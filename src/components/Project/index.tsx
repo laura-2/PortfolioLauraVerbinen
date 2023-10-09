@@ -125,9 +125,15 @@ export default function Project({title}: ProjectProps){
 
     ]
     return(
-        <section className="block mx-44" id="page-j">
+        <section className="block mx-16 xl:mx-28" id="page-j">
             <h1 className="uppercase font-bold text-7xl">{title}</h1>
-            <Swiper spaceBetween={20} slidesPerView={2} 
+            <Swiper spaceBetween={20} slidesPerView={1} 
+            breakpoints={{
+                1024: {
+                  width: 1024,
+                  slidesPerView: 2,
+                }
+              }}
             className='flex my-28'>
                 {skills.map((item, index)=>{
                     return  <SwiperSlide key={index} className="block justify-center text-center px-16 py-10

@@ -13,6 +13,7 @@ import tech from '../../assets/ProjetoTech.png';
 import fruta from '../../assets/Projetofruta.png';
 import sobremim from  '../../assets/Projetosobremim.png'
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -127,7 +128,10 @@ export default function Project({title}: ProjectProps){
     return(
         <section className="block p-10 xl:mx-28" id="page-j">
             <h1 className="uppercase font-bold text-4xl">{title}</h1>
-            <Swiper spaceBetween={20} slidesPerView={1} 
+            <Swiper 
+            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            scrollbar={{ draggable: true }}
+            spaceBetween={20} slidesPerView={1} 
             breakpoints={{
                 1024: {
                   width: 1024,

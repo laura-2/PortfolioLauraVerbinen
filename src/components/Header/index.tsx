@@ -25,6 +25,7 @@ export default function Header({image, alt="Logo image"}: HeaderProps){
                 {option.map((item, index)=>{
                     return <a className="text-3xl navColor" key={index}
                     href={`#page-${item[index]}`}
+                    onClick={()=>setOpenMenu(false)}
                      >{item}</a>
                 })}
             </div>

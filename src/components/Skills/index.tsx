@@ -12,6 +12,11 @@ import sass from '../../assets/sass.png';
 import tp from '../../assets/typescript.png';
 import tw from '../../assets/tailwind.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 interface AboutProps {
     title: string
@@ -89,7 +94,11 @@ export default function Skills({title}: AboutProps){
     return(
         <section className="block p-10 xl:px-28" id="page-i">
             <h1 className="uppercase font-bold text-4xl">{title}</h1>
-            <Swiper spaceBetween={10} slidesPerView={1} 
+            <Swiper 
+            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            spaceBetween={10} 
+            slidesPerView={1}
+            scrollbar={{ draggable: true }}
             breakpoints={{
                 768: {
                   width: 768,
@@ -99,7 +108,7 @@ export default function Skills({title}: AboutProps){
             className='flex my-10 shadow-md'>
                 {skills.map((item, index)=>{
                     return  <SwiperSlide key={index} className="block justify-center shadow-2xl py-5 px-16
-                    border-2 rounded-lg">
+                    border-2 rounded-lg duration-700 ease-in-out">
                         <img alt={item.alt} src={item.image}></img>
                         <p className="text-center pt-5">{item.text}</p>
                         </SwiperSlide>

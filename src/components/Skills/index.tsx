@@ -12,7 +12,7 @@ import sass from '../../assets/sass.png';
 import tp from '../../assets/typescript.png';
 import tw from '../../assets/tailwind.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, A11y, EffectCube, EffectCards } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -95,20 +95,26 @@ export default function Skills({title}: AboutProps){
         <section className="block p-10 xl:px-28" id="page-i">
             <h1 className="uppercase font-bold text-4xl">{title}</h1>
             <Swiper 
-            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            modules={[Navigation, Pagination, Scrollbar, A11y, EffectCube, EffectCards]}
             spaceBetween={10} 
             slidesPerView={1}
-            scrollbar={{ draggable: true }}
+            pagination={{
+                dynamicBullets: true,
+                clickable: true,
+              }}
+            
+            //navigation
+            // effect={'cards'}
+            // grabCursor={true}
             breakpoints={{
                 768: {
                   width: 768,
                   slidesPerView: 3,
                 }
               }}
-            className='flex my-10 shadow-md'>
+            className='my-5 white'>
                 {skills.map((item, index)=>{
-                    return  <SwiperSlide key={index} className="block justify-center shadow-2xl py-5 px-16
-                    border-2 rounded-lg duration-700 ease-in-out">
+                    return  <SwiperSlide key={index} className="block justify-center py-5 px-16 cards my-5">
                         <img alt={item.alt} src={item.image}></img>
                         <p className="text-center pt-5">{item.text}</p>
                         </SwiperSlide>

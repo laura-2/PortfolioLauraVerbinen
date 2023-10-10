@@ -130,19 +130,22 @@ export default function Project({title}: ProjectProps){
             <h1 className="uppercase font-bold text-4xl">{title}</h1>
             <Swiper 
             modules={[Navigation, Pagination, Scrollbar, A11y]}
-            scrollbar={{ draggable: true }}
             spaceBetween={20} slidesPerView={1} 
+            pagination={{
+                dynamicBullets: true,
+                clickable: true,
+              }}
             breakpoints={{
                 1024: {
                   width: 1024,
                   slidesPerView: 2,
                 }
               }}
-            className='flex my-10'>
+            className='flex my-5'>
                 {skills.map((item, index)=>{
                     return  <SwiperSlide key={index} className="block justify-center text-center
-                    border-2 rounded-lg py-5">
-                        <a href={item.website}><img alt={item.alt} src={item.image} className='p-5'/></a>
+                    border-2 rounded-lg py-5 my-8">
+                        <a href={item.website}><img alt={item.alt} src={item.image} className='px-5'/></a>
                         <p className="py-3">{item.text}</p>
                             <a href={item.code} 
                             className="text-white px-5 py-2 link-code">View source code</a>

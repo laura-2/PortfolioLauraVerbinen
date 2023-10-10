@@ -103,6 +103,7 @@ export default function Skills({title}: AboutProps){
                 clickable: true,
               }}
             
+            
             //navigation
             // effect={'cards'}
             // grabCursor={true}

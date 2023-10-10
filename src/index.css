@@ -109,3 +109,10 @@ body::-webkit-scrollbar-thumb {
 .cards{
   background-color: #353d2f;
 }
+.swiper-pagination-bullet {
+  background-color: #fbfbf2 !important;
+}
+
+.swiper-pagination-bullet-active-main{
+  background-color: #dc965a !important;
+}

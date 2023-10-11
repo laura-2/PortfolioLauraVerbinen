@@ -127,7 +127,7 @@ export default function Project({title}: ProjectProps){
     ]
     return(
         <section className="block p-10 xl:mx-28" id="page-j">
-            <h1 className="uppercase font-bold text-4xl">{title}</h1>
+            <h1 className="uppercase font-bold text-4xl md:text-5xl">{title}</h1>
             <Swiper 
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             spaceBetween={20} slidesPerView={1} 

@@ -39,32 +39,32 @@ export default function Contact({ image, alt="Image girl running", title }: Cont
 
   
   return (
-    <section className="flex flex-col gap-10 xl:flex-row xl:ml-20" id="page-a">
-      <div className="flex w-5/6 self-center xl:w-3/6">
+    <section className="flex flex-col gap-10 xl:flex-row xl:ml-36" id="page-a">
+      <div className="flex w-5/6 self-center lg:w-3/6">
         <img alt={alt} src={image} />
       </div>
       <div className="block self-center gap-5 w-5/6">
-        <h1 className="uppercase font-bold text-4xl">{title}</h1>
+        <h1 className="uppercase font-bold text-4xl md:text-5xl">{title}</h1>
         <form className="flex my-5 flex-col" onSubmit={handleSubmit(onSubmit)}>
           <label className="text-white text-xl" htmlFor="name">Name</label>
-          <input placeholder="First name" className="input-contact w-11/12" type="text"
+          <input placeholder="First name" className="input-contact w-11/12 lg:w-7/12" type="text"
           {...register("name")}/>
           {errors?.name?.message && (
           <p className="text-white">{errors?.name?.message}</p>
           )}
           <label className="text-white text-xl" htmlFor="email">Email</label>
-          <input placeholder="example@email.com" className="input-contact w-11/12" type="email"
+          <input placeholder="example@email.com" className="input-contact w-11/12 lg:w-7/12" type="email"
           {...register("email")} />
           {errors?.email?.message && (
           <p className="text-white">{errors?.email?.message}</p>
           )}
           <label className="text-white text-xl" htmlFor="message">Message</label>
-          <textarea placeholder="Write your message" className="area-contact w-11/12 h-72" typeof="text"
+          <textarea placeholder="Write your message" className="area-contact w-11/12 h-72 lg:w-8/12" typeof="text"
           {...register("message")}/>
           {errors?.message?.message && (
           <p className="text-white">{errors?.message?.message}</p>
           )}
-          <button className="button-contact w-3/6 flex justify-center items-center gap-3 xl:w-1/6">Send<img src={sendIcon} alt="Send message"/></button>
+          <button className="button-contact w-3/6 flex justify-center items-center gap-3 sm:w-2/6 lg:w-1/6">Send<img src={sendIcon} alt="Send message"/></button>
         </form>
         {showMessage && (
            <div className="text-white">

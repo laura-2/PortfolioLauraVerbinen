@@ -93,7 +93,7 @@ export default function Skills({title}: AboutProps){
     ]
     return(
         <section className="block p-10 xl:px-28" id="page-i">
-            <h1 className="uppercase font-bold text-4xl">{title}</h1>
+            <h1 className="uppercase font-bold text-4xl md:text-5xl">{title}</h1>
             <Swiper 
             modules={[Navigation, Pagination, Scrollbar, A11y, EffectCube, EffectCards]}
             spaceBetween={10} 
@@ -111,11 +111,15 @@ export default function Skills({title}: AboutProps){
                 768: {
                   width: 768,
                   slidesPerView: 3,
-                }
+                },
+                350: {
+                    width: 350,
+                    slidesPerView: 2,
+                  }
               }}
             className='my-5 white'>
                 {skills.map((item, index)=>{
-                    return  <SwiperSlide key={index} className="block justify-center py-5 px-16 cards my-5">
+                    return  <SwiperSlide key={index} className="block justify-center items-center py-5 px-10 cards my-5 md:px-16">
                         <img alt={item.alt} src={item.image}></img>
                         <p className="text-center pt-5">{item.text}</p>
                         </SwiperSlide>

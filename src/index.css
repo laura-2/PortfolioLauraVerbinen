@@ -105,6 +105,9 @@ body::-webkit-scrollbar-thumb {
   .navBarDesktop{
     display: none;
   }
+  .mobileNavBar{
+    display: none;
+  }
 }
 .cards{
   background-color: #353d2f;

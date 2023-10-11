@@ -103,10 +103,6 @@ body::-webkit-scrollbar-thumb {
   .mobileNavBar{
     display: none;
   }
-  .textError{
-    font-size: 10px;
-    margin-top: 8%;
-  }
 }
 .cards{
   background-color: #353d2f;

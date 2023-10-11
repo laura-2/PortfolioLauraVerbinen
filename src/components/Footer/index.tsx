@@ -1,5 +1,3 @@
-import wpp from "../../assets/whatsapp.png";
-import insta from "../../assets/instagram.png";
 import link from "../../assets/linkedin.png";
 import github from "../../assets/github.png";
 
@@ -9,16 +7,6 @@ interface FooterProps {
 
 export default function Footer({ alt="Icons media social"}: FooterProps) {
   const icones = [
-    {
-      iconName: "Whatsapp",
-      link: 'https://wa.me/qr/ADKM3VXC7FQ7B1',
-      url: wpp,
-    },
-    {
-      iconName: "Instagram",
-      link: 'https://instagram.com/lauraheleverbinen?igshid=YTQwZjQ0NmI0OA==',
-      url: insta,
-    },
     {
       iconName: "Github",
       link: 'https://github.com/laura-2',
@@ -39,7 +27,7 @@ export default function Footer({ alt="Icons media social"}: FooterProps) {
               key={index}
               href={vector.link}
             >
-              <img alt={alt} src={vector.url} className="m-2 w-2/12"/>
+              <img alt={alt} src={vector.url} className="m-2 w-3/12"/>
               <p className="text-sm">{vector.iconName}</p>
             </a>
           );

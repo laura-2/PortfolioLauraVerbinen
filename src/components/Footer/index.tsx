@@ -1,26 +1,14 @@
-import link from "../../assets/linkedin.png";
-import github from "../../assets/github.png";
+import { IIconsFooter } from "../../interfaces/IIconsFooter";
 
 interface FooterProps {
-  alt?: string;
+  alt?: string
+  icons: IIconsFooter[]
 }
 
-export default function Footer({ alt="Icons media social"}: FooterProps) {
-  const icones = [
-    {
-      iconName: "Github",
-      link: 'https://github.com/laura-2',
-      url: github,
-    },
-    {
-      iconName: "Linkedin",
-      link: 'https://www.linkedin.com/in/laura-helena-verbinen-8b5308211/',
-      url: link,
-    },
-  ];
+export default function Footer({ alt="Icons media social", icons}: FooterProps) {
   return (
     <section className="flex flex-wrap justify-center gap-2 my-2 md:mx-0 md:gap-5 xl:gap-20" id="Footer">
-        {icones.map((vector, index) => {
+        {icons.map((vector, index) => {
           return (
             <a
               className="flex items-center gap-1"

@@ -3,14 +3,13 @@ import menu from "../../assets/botao-menu.png"
 import closeIcon from "../../assets/fechar.png"
 
 interface HeaderProps {
-    image: string,
+    image: string
     alt?: string
+    option: string[]
 }
 
-export default function Header({image, alt="Logo image"}: HeaderProps){
+export default function Header({image, alt="Logo image", option}: HeaderProps){
     const [openMenu, setOpenMenu] = useState(false);
-    const option = ['Home', 'About', 'Skills', 'Projects', 'Contact']
-
     return(
         <header className="flex py-5 px-10 items-center" id="Home">
             <div>

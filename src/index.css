@@ -93,11 +93,6 @@ body::-webkit-scrollbar-thumb {
   border: 1px solid #dc965a;
 }
 
-/* green': '#353d2f',
-      'purple': '#51344d',
-      'white': '#fbfbf2',
-      'orange': '#dc965a', */
-
 @media (max-width: 640px){
   .navBar{
     display: flex;
@@ -107,6 +102,10 @@ body::-webkit-scrollbar-thumb {
   }
   .mobileNavBar{
     display: none;
+  }
+  .textError{
+    font-size: 16px;
+    margin-top: 10%;
   }
 }
 .cards{

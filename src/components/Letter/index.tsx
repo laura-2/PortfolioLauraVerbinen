@@ -17,7 +17,7 @@ export default function Letter({image, alt="Image girl on the computer", title, 
                 <img alt={alt} src={image}/>
             </div>
         </section>
-        <section className="xl:flex flex-row p-10 gap-10 items-center mx-20 sm:hidden mobileNavBar" id="page-H">
+        <section className="xl:flex flex-row gap-10 mx-28 my-10 items-center sm:hidden mobileNavBar" id="page-H">
         <div className="w-4/6">
             <img alt={alt} src={image}/>
         </div>

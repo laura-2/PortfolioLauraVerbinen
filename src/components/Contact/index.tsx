@@ -42,7 +42,7 @@ export default function Contact({ image, alt="Image girl running", title, labelN
 
   
   return (
-    <section className="flex flex-col gap-10 xl:flex-row xl:ml-36" id="page-a">
+    <section className="flex flex-col gap-10 xl:flex-row gap-20 ml-44" id="page-a">
       <div className="flex w-5/6 self-center lg:w-3/6">
         <img alt={alt} src={image} />
       </div>

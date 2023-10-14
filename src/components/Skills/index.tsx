@@ -14,7 +14,7 @@ interface AboutProps {
 export default function Skills({title, skills}: AboutProps){
     
     return(
-        <section className="block p-10 xl:mx-28 p-5" id="page-i">
+        <section className="block p-10 xl:mx-28 xl:p-5" id="page-i">
             <h1 className="uppercase font-bold text-4xl md:text-5xl">{title}</h1>
             <Swiper 
             modules={[Navigation, Pagination, Scrollbar, A11y, EffectCube, EffectCards]}

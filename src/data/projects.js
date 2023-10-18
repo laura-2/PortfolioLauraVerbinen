@@ -12,6 +12,7 @@ import midi from '../assets/ProjetoMidi.png';
 import tech from '../assets/ProjetoTech.png';
 import fruta from '../assets/Projetofruta.png';
 import sobremim from  '../assets/Projetosobremim.png'
+import pensamentos from '../assets/ProjetoPensamentos.png'
 
 
 
@@ -22,6 +23,13 @@ const projects = [
         alt: 'Project Casa Verde',
         code: 'https://github.com/laura-2/casaVerde',
         text: 'React Javascript CSS'
+    },
+    {
+        image: pensamentos,
+        website: 'https://pensamentos-xi.vercel.app/',
+        alt: 'Project Thinking',
+        code: 'https://github.com/laura-2/pensamentos',
+        text: 'Angular Typescript CSS'
     },
     {
         image: cord,

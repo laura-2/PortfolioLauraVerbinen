@@ -11,13 +11,18 @@ import redux from '../assets/redux.png';
 import sass from '../assets/sass.png';
 import tp from '../assets/typescript.png';
 import tw from '../assets/tailwind.png';
-
+import angular from '../assets/angular.png'
 
 const skills = [
     {
         image: react,
         alt: 'React',
         text: 'React'
+    },
+    {
+        image: angular,
+        alt: 'Angular',
+        text: 'Angular'
     },
     {
         image: reactNative,

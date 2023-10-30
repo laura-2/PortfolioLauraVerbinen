@@ -12,6 +12,7 @@ import Footer from '../../components/Footer';
 import skills from '../../data/skills';
 import projects from '../../data/projects';
 import icons from '../../data/icons';
+import CV from '../../components/CV';
 
 function HomeScreen() {
   const option = ['Home', 'About', 'Skills', 'Projects', 'Contact']
@@ -24,10 +25,11 @@ function HomeScreen() {
        I have been actively working and growing in the field of technology for the past two years, 
        continuously enhancing my knowledge and expertise in this dynamic industry."/>
        <Skills title="Hard Skills" skills={skills}/>
-       <Project title="My projects" projects={projects}/>
+       <Project title="My projects" projects={projects} openSource='View source code'/>
        <Contact title="Contact me!"
        image={stickerRun} labelName='Name' labelEmail='Email'
        labelMessage='Message'/>
+       <CV cvtitle='Want to download my complete resume?'/>
        <Footer icons={icons}/>
       </>
   );

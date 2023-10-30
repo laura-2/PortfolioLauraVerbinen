@@ -92,7 +92,19 @@ body::-webkit-scrollbar-thumb {
   background-color: #dc965a;
   border: 1px solid #dc965a;
 }
-
+.withoutCode{
+  color: #51344d;
+}
+.dloadFile{
+  color: #dc965a;
+}
+.dloadFile:visited{
+  color: #51344d;
+}
+.questionDload{
+  color: #dc965a;
+  text-align: center;
+}
 @media (max-width: 640px){
   .navBar{
     display: flex;

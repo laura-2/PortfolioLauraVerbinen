@@ -13,6 +13,7 @@ import tech from '../assets/ProjetoTech.png';
 import fruta from '../assets/Projetofruta.png';
 import sobremim from  '../assets/Projetosobremim.png'
 import pensamentos from '../assets/ProjetoPensamentos.png'
+import trip from '../assets/ProjetoTrip.png'
 
 
 
@@ -44,6 +45,11 @@ const projects = [
         alt: 'Project Loja Meteora',
         code: 'https://github.com/laura-2/loja-meteora',
         text: 'React Javascript Bootstrap'
+    },
+    {
+        image: trip,
+        alt: 'Project Trip',
+        text: 'WordPress'
     },
     {
         image: midi,

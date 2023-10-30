@@ -1,7 +1,7 @@
 export interface IProjects{
     image: string,
-    website: string,
+    website?: string,
     alt?: string,
-    code: string,
+    code?: string,
     text: string
 }

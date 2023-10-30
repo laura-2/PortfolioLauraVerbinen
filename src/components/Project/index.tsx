@@ -9,9 +9,10 @@ import { IProjects } from '../../interfaces/IProjects';
 interface ProjectProps {
     title: string
     projects: IProjects[]
+    openSource: string
 }
 
-export default function Project({title, projects}: ProjectProps){
+export default function Project({title, projects, openSource}: ProjectProps){
     
     return(
         <section className="block p-10 xl:mx-28 xl:p-5" id="page-j">
@@ -35,8 +36,9 @@ export default function Project({title, projects}: ProjectProps){
                     border-2 rounded-lg py-5 my-8">
                         <a href={item.website}><img alt={item.alt} src={item.image} className='px-5'/></a>
                         <p className="py-3">{item.text}</p>
-                            <a href={item.code} 
-                            className="text-white px-5 py-2 link-code">View source code</a>
+                        {item.code ? 
+                        <a href={item.code} className="text-white px-5 py-2 link-code">{openSource}</a> :
+                        <p className='withoutCode'>Do not have a source code</p>}
                         </SwiperSlide>
                 })}
                 </Swiper>

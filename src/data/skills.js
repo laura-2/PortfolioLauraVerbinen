@@ -11,7 +11,8 @@ import redux from '../assets/redux.png';
 import sass from '../assets/sass.png';
 import tp from '../assets/typescript.png';
 import tw from '../assets/tailwind.png';
-import angular from '../assets/angular.png'
+import angular from '../assets/angular.png';
+import wp from '../assets/wordpress.png';
 
 const skills = [
     {
@@ -23,6 +24,11 @@ const skills = [
         image: angular,
         alt: 'Angular',
         text: 'Angular'
+    },
+    {
+        image: wp,
+        alt: 'WordPress',
+        text: 'WordPress'
     },
     {
         image: reactNative,

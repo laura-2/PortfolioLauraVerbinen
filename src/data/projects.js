@@ -23,7 +23,7 @@ const projects = [
         website: 'https://casa-verde-coral.vercel.app/',
         alt: 'Project Casa Verde',
         code: 'https://github.com/laura-2/casaVerde',
-        text: 'React Javascript CSS'
+        text: 'React Javascript CSS MySQL'
     },
     {
         image: pensamentos,

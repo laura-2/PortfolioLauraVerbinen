@@ -14,6 +14,7 @@ import fruta from '../assets/Projetofruta.png';
 import sobremim from  '../assets/Projetosobremim.png'
 import pensamentos from '../assets/ProjetoPensamentos.png'
 import trip from '../assets/ProjetoTrip.png'
+import laurence from '../assets/ProjetoLaurence.png'
 
 
 
@@ -56,6 +57,13 @@ const projects = [
         website: 'https://teclas-som.vercel.app/',
         alt: 'Project Midi',
         code: 'https://github.com/laura-2/teclasSom',
+        text: 'HTML CSS JavaScript'
+    },
+    {
+        image: laurence,
+        website: 'https://laurence.vercel.app/',
+        alt: 'Project Laurence',
+        code: 'https://github.com/laura-2/Laurence',
         text: 'HTML CSS JavaScript'
     },
     {

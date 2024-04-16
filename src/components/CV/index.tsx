@@ -6,7 +6,7 @@ interface CVProps {
 export default function CV({cvtitle}: CVProps) {
   return (
     <p className="questionDload">{cvtitle} 
-    <a download="LauraVerbinenEN.pdf" href="https://drive.google.com/file/d/18JVf5XlJtZ4mnfzThlv6-F28ex83gJQo/view?usp=sharing"
+    <a download="CVLauraVerbinen.pdf" href="https://drive.google.com/file/d/1k-IbU_I9b09fa7Cgyi99bsone_cwwHVz/view?usp=sharing"
     className="dloadFile"> Click here</a></p>
   );
 }

@@ -15,10 +15,18 @@ import sobremim from  '../assets/Projetosobremim.png'
 import pensamentos from '../assets/ProjetoPensamentos.png'
 import trip from '../assets/ProjetoTrip.png'
 import laurence from '../assets/ProjetoLaurence.png'
+import proximaParada from '../assets/proximaparada.png'
 
 
 
 const projects = [
+    {
+        image: proximaParada,
+        website: 'https://proxima-parada.vercel.app/',
+        alt: 'Project Próxima Parada',
+        code: 'https://github.com/laura-2/proximaParada',
+        text: 'React Javascript TailwindCSS MongoDB Node.js'
+    },
     {
         image: casaverde,
         website: 'https://casa-verde-coral.vercel.app/',

@@ -121,7 +121,12 @@ body::-webkit-scrollbar-thumb {
 }
 @media (375px < width < 640px){
   .cards{
-    padding-inline: 5px;
+    padding-inline: 20px;
+  }
+}
+@media (width: 393px){
+  .cards{
+    padding-inline: 5px !important;
   }
 }
 

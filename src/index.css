@@ -127,6 +127,7 @@ body::-webkit-scrollbar-thumb {
 @media (width: 393px){
   .cards{
     padding-inline: 8px !important;
+    padding-left: 5px;
   }
 }
 

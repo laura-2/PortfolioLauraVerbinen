@@ -36,7 +36,7 @@ export default function Skills({title, skills}: AboutProps){
               }}
             className='my-5 white'>
                 {skills.map((item, index)=>{
-                    return  <SwiperSlide key={index} className="block justify-center items-center py-5 px-16 cards my-5 sm:px-10 md:px-16">
+                    return  <SwiperSlide key={index} className="block justify-center items-center px-16 py-5 cards my-5 sm:px-20">
                         <img alt={item.alt} src={item.image}/>
                         <p className="text-center pt-5">{item.text}</p>
                         </SwiperSlide>

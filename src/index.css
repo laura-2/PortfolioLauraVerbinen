@@ -119,6 +119,12 @@ body::-webkit-scrollbar-thumb {
 .cards{
   background-color: #353d2f;
 }
+@media (375px < width < 640px){
+  .cards{
+    padding-inline: 20px;
+  }
+}
+
 .swiper-pagination-bullet {
   background-color: #fbfbf2 !important;
 }

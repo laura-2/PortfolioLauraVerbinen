@@ -19,9 +19,9 @@ function HomeScreen() {
   return (
     <>
       <Header image={logo} option={option}/>
-      <Letter image={stickerSit} title="Front End Developer" text="Hi, I'm Laura! It's nice to see you here!"/>
+      <Letter image={stickerSit} title="Software Developer" text="Hi, I'm Laura! It's nice to see you here!"/>
       <About image={stickerMusic} title="About me" text="I am a graduated technician in analysis and development of systems from PUCPR College in Curitiba, Brazil. 
-       Additionally, I have gained valuable experience in Front-End development skills. 
+       Additionally, I have gained valuable experience in Full Stack development skills. 
        I have been actively working and growing in the field of technology for the past two years, 
        continuously enhancing my knowledge and expertise in this dynamic industry."/>
        <Skills title="Hard Skills" skills={skills}/>

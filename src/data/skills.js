@@ -13,7 +13,8 @@ import tp from '../assets/typescript.png';
 import tw from '../assets/tailwind.png';
 import angular from '../assets/angular.png';
 import wp from '../assets/wordpress.png';
-import mongobd from '../assets/mongodb.png'
+import mongobd from '../assets/mongodb.png';
+import jquery from '../assets/jquery.png'
 
 const skills = [
     {
@@ -55,6 +56,11 @@ const skills = [
         image: js,
         alt: 'JavaScript',
         text: 'JavaScript'
+    },
+    {
+        image: jquery,
+        alt: 'JQuery',
+        text: 'JQuery'
     },
     {
         image: mongobd,
